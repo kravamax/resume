@@ -1,0 +1,105 @@
+.main__container {
+  background-color: $main-bg-color;
+
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.main__list {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding: 40px 100px;
+}
+
+.main__list-item {
+  width: 400px;
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.main__list-tittle {
+  background-color: $background-title-color;
+  display: inline-block;
+  color: $main-title-color;
+
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 3px 10px 7px;
+  margin-bottom: 15px;
+}
+
+/*  Contacts  */
+
+.contacts-list__item,
+.links-list__item,
+.skills-list {
+  @extend %list;
+}
+
+/*   Links  */
+
+.links-list {
+  // display: flex;
+}
+
+.links-list__item {
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+/*   Skills  */
+
+.skills-list__container {
+  display: flex;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.progress-bar__container {
+  background-color: $range-background-color;
+  // background-color: $main-header-color;
+  height: 10px;
+
+  width: 350px;
+  margin: 10px 0;
+}
+
+.progress-bar__line {
+  // background-color: $range-fill-color;
+  background-color: $main-header-color;
+
+  height: 10px;
+}
+
+/*   Education  */
+
+.education-place__text {
+  color: $accent-text-color;
+  font-weight: 700;
+}
+
+.education-time__text {
+  color: $secondary-text-color;
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+
+// .education-direction__text {
+// }
+
+/*   Courses  */
+/*   Work experience  */
+/*   Pet-projects  */
+
+.pet-projects__list {
+  @extend %list;
+}

@@ -1,0 +1,29 @@
+.header__container {
+  display: flex;
+
+  background-color: $main-header-color;
+  color: $header-text-color;
+
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.header__text-box {
+  padding-top: 50px;
+  padding-left: 45px;
+}
+
+.header__img {
+  overflow: hidden;
+  border-top-left-radius: 8px;
+}
+
+.header__title {
+  width: 300px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.header__text {
+  font-weight: 700;
+}

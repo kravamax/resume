@@ -1,0 +1,28 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "dependencies": {
+    "parcel": "^2.5.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.5.0"
+  },
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kravamax/resume.git"
+  },
+  "keywords": [],
+  "author": "Max Kravchenko <maks.cross@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kravamax/resume/issues"
+  },
+  "homepage": "https://github.com/kravamax/resume#readme"
+}
