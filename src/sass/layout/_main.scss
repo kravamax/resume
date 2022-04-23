@@ -1,22 +1,75 @@
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .main__container {
   background-color: $main-bg-color;
 
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  padding: 20px;
+
+  text-align: center;
+  @media screen and (min-width: 480px) {
+    text-align: left;
+  }
+
+  @media screen and (min-width: 1000px) {
+    padding: 40px 100px;
+  }
 }
 
-.main__list {
+.main__list,
+.contacts-links-container {
   @extend %list;
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
-  padding: 40px 100px;
+  justify-content: space-around;
+
+  @media screen and (min-width: 320px) {
+    // padding: 20px 20px;
+  }
+
+  @media screen and (min-width: 480px) {
+    justify-content: start;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1000px) {
+    // padding: 20px 100px;
+  }
+}
+
+.contacts-links-container {
+  @media screen and (max-width: 479px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 480px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .main__list-item {
-  width: 400px;
+  width: 250px;
   &:not(:last-child) {
     margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 320px) {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+  @media screen and (min-width: 480px) {
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+  @media screen and (min-width: 600px) {
+    width: 50%;
   }
 }
 
@@ -41,39 +94,72 @@
 
 /*   Links  */
 
-.links-list {
-  // display: flex;
-}
+// .links-list {
+//   // display: flex;
+// }
 
-.links-list__item {
-  &:not(:last-child) {
-    margin-right: 20px;
-  }
-}
+// .links-list__item {
+//   &:not(:last-child) {
+//     margin-right: 20px;
+//   }
+// }
 
 /*   Skills  */
 
 .skills-list__container {
   display: flex;
+
+  @media screen and (min-width: 320px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+  }
 }
 
 .skills-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media screen and (min-width: 320px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .progress-bar__container {
   background-color: $range-background-color;
-  // background-color: $main-header-color;
   height: 10px;
 
-  width: 350px;
+  width: 250px;
   margin: 10px 0;
+
+  @media screen and (min-width: 320px) {
+    width: 250px;
+  }
+
+  @media screen and (max-width: 479px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 200px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 300px;
+  }
 }
 
 .progress-bar__line {
-  // background-color: $range-fill-color;
   background-color: $main-header-color;
 
   height: 10px;
@@ -81,16 +167,20 @@
 
 /*   Education  */
 
-.education-place__text {
+.accent-text {
   color: $accent-text-color;
   font-weight: 700;
 }
 
-.education-time__text {
+.secondary-text {
   color: $secondary-text-color;
   text-transform: uppercase;
 
   margin-bottom: 10px;
+
+  @media screen and (max-width: 479px) {
+    font-size: 12px;
+  }
 }
 
 // .education-direction__text {

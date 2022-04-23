@@ -20,8 +20,9 @@
     </header>
     <main class="main">
       <section class="container main__container">
-        <ul class="main__list">
-          <li class="main__list-item">
+        <ul class="main__list contacts-links-container">
+          <!-- Contacts -->
+          <li class="main__list-item main__list--small">
             <h2 class="main__list-tittle">Контакты</h2>
             <ul class="contacts-list">
               <li class="contacts-list__item">
@@ -34,7 +35,8 @@
               </li>
             </ul>
           </li>
-          <li class="main__list-item">
+          <!-- Links -->
+          <li class="main__list-item main__list--small">
             <h2 class="main__list-tittle">Ссылки</h2>
             <ul class="links-list">
               <li class="links-list__item">
@@ -48,7 +50,10 @@
               <!-- <li class="links-list__item"><a href="">GitHub</a></li> -->
             </ul>
           </li>
-          <li class="main__list-item" style="width: 800px">
+        </ul>
+        <ul class="main__list">
+          <!-- Skills -->
+          <li class="main__list-item" style="width: 100%">
             <h2 class="main__list-tittle">Навыки</h2>
             <div class="skills-list__container">
               <ul class="skills-list">
@@ -93,33 +98,35 @@
               </ul>
             </div>
           </li>
-
+          <!-- Education -->
           <li class="main__list-item">
             <h2 class="main__list-tittle">Образование</h2>
-            <p class="education-place__text">Магистр, НТУ "ХПИ", Харьков</p>
-            <p class="education-time__text">сентябрь 2013 - декабрь 2019</p>
+            <p class="accent-text">Магистр, НТУ "ХПИ", Харьков</p>
+            <p class="secondary-text">сентябрь 2013 - декабрь 2019</p>
             <p class="education-direction__text">Компьютерные науки</p>
           </li>
-          <li class="main__list-item">
-            <h2 class="main__list-tittle">Курсы</h2>
-            <p class="education-place__text">Front-end developer, GoIT Academy</p>
-            <p class="education-time__text">июль 2021 - настоящее время</p>
-          </li>
+          <!-- Languages -->
           <li class="main__list-item">
             <h2 class="main__list-tittle">Языки</h2>
             <p>English - Pre-Intermediate (A2)</p>
-            <div class="progress-bar__container">
-              <div class="progress-bar__line" style="width: 60%"></div>
-            </div>
           </li>
+          <!-- Experience -->
           <li class="main__list-item">
             <h2 class="main__list-tittle">Опыт работы</h2>
-            <p class="education-place__text">Специалист по персоналу, Метинвест, Кривой Рог</p>
-            <p class="education-time__text">сентябрь 2019 - ноябрь 2020</p>
+            <p class="accent-text">Специалист по персоналу,</p>
+            <p class="accent-text">Метинвест, Кривой Рог</p>
+            <p class="secondary-text">сентябрь 2019 - ноябрь 2020</p>
           </li>
+          <!-- Courses -->
+          <li class="main__list-item">
+            <h2 class="main__list-tittle">Курсы</h2>
+            <p class="accent-text">Front-end developer, GoIT Academy</p>
+            <p class="secondary-text">июль 2021 - настоящее время</p>
+          </li>
+          <!-- Pet-projects -->
           <li class="main__list-item">
             <h2 class="main__list-tittle">Pet-проекты</h2>
-            <ul class="pet-projects__list">
+            <ul class="pet-projects__list accent-text">
               <li class="pet-projects__item">
                 <a target="_blank" href="http://kravamax.github.io/goit-js-hw-11/"
                   >Поиск изображений по ключевому слову (JavaScript)</a
