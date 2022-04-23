@@ -1,28 +1,28 @@
 {
-  "name": "resume",
-  "version": "1.0.0",
+  "name": "parcel-project-template",
+  "version": "1.1.0",
   "description": "",
-  "source": "src/index.html",
-  "browserslist": "> 0.5%, last 2 versions, not dead",
-  "dependencies": {
-    "parcel": "^2.5.0"
-  },
-  "devDependencies": {
-    "@parcel/transformer-sass": "^2.5.0"
-  },
+  "main": "index.js",
+  "homepage": "https://kravamax.github.io/resume",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /resume/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kravamax/resume.git"
+    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
   },
   "keywords": [],
-  "author": "Max Kravchenko <maks.cross@gmail.com>",
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kravamax/resume/issues"
+    "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
-  "homepage": "https://github.com/kravamax/resume#readme"
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "posthtml-include": "^1.6.2",
+    "sass": "^1.32.8"
+  }
 }
