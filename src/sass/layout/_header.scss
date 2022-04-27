@@ -32,10 +32,14 @@
 }
 
 .header__img {
-  overflow: hidden;
-  border-top-left-radius: 8px;
+  max-width: 0;
 
-  max-width: 150px;
+  @media screen and (min-width: 320px) {
+    overflow: hidden;
+    border-top-left-radius: 8px;
+
+    max-width: 150px;
+  }
 
   @media screen and (min-width: 480px) {
     max-width: 200px;
